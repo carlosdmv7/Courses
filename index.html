@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- 
+		
+                                    Yo, Bretheren. 
+
+                                    This template is made by me, with the intention of providing people who are starting out in web development
+                                    with a simplistic, minimal website to get themselves up online and displaying their projects.
+
+                                    You will find that every section is commented and explains in brief what it does.
+
+                                    It was created out of the goodness of my heart. <3
+
+                                    By all means use this for your own projects, pull it apart, edit it.. claim it as your own work if you want to. However
+                                    I please ask you don't resell it.
+
+                                    If you do, I will find you.. and I will kill you.
+
+                                    Slowly.
+
+									                  Have a splendid day.
+                                    James x
+                                    
+                                    AKA The Countryside Coder
+
+                                          .--..--..--..--..--..--.
+                                        .' \  (`._   (_)     _   \
+                                      .'    |  '._)         (_)  |
+                                      \ _.')\      .----..---.   /
+                                      |(_.'  |    /    .-\-.  \  |
+                                      \     0|    |   ( O| O) | o|
+                                       |  _  |  .--.____.'._.-.  |
+                                       \ (_) | o         -` .-`  |
+                                        |    \   |`-._ _ _ _ _\ /
+                                        \    |   |  `. |_||_|   |
+                                        | o  |    \_      \     |     -.   .-.
+                                        |.-.  \     `--..-'   O |     `.`-' .'
+                                      _.'  .' |     `-.-'      /-.__   ' .-'
+                                    .' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
+                                    `-._  `.  |________/\_____|    `-.'
+                                       .'   ).| '=' '='\/ '=' |
+                                       `._.`  '---------------'
+                                               //___\   //___\
+                                                 ||       ||
+                                                 ||_.-.   ||_.-.
+                                                (_.--__) (_.--__)                               
+        -->
+
+	<!-- The boring part! -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Portfolio</title>
+	<meta content="Development portfolio of .... " name="description" property="og:description">
+	
+	<!-- Link to the relevant stylesheet -->
+	<link href="style.css" rel="stylesheet">
+	
+  <!--[if lte IE 8]>
+      <link href="dist/css/blockIE.css" rel="stylesheet">
+    <![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
+  <!-- The JS code block has been moved into the index.js file.  -->
+  <script src="./index.js"></script>
+</head>
+
+<body>
+	<!-- This calls the little script written above. -->
+  <div class="preloader"></div>
+  <main>
+
+	<!-- The Intro section begins -->
+  <section class="intro">
+
+		<div class="intro-text"> <!-- Seperates the text section from the arrow. -->
+      <div class="Hi">
+				<h1>Hi! 👋  &mdash; My name is <span>Domingo</span>, I'm a <span>Data Scientist</span> 👨🏻‍💻.</h1> <!-- Insert your text here! -->
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/domingo-jos%C3%A9-caballero-navarro-56a29a24b/"
+          target="_blank"
+          class="linkedin"
+          ><img
+          src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg"
+          alt="Linkedin"
+          height="10"
+          width="15"
+        /></a>
+        <a href="https://github.com/DomingoJoseCab" target="_blank" class="github"
+          ><img
+          src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+          alt="GitHub"
+          height="10"
+          width="15"
+        /></a>
+
+        <a href="mailto:domingojcn@gmail.com" target="_blank" class="google"
+          ><img
+          src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg"
+          alt="Gmail"
+          height="15"
+          width="15"
+        /></a>
+      </div>
+    </div>
+    
+	</section>
+	<!-- Intro section ends -->
+
+	<!-- The portfolio section begins -->
+  <!-- Please note: all of the following images are from Unsplash. I do not own the rights to them, and I have used them according to Unsplash's
+    href="https://www.github.com/jabedford"
+				rules and regulations. All credits go to original owners/photographers.-->
+
+  <section class="projects">
+    <div class="projects-collage">
+
+      <!-- Project Four -->
+      <a class="project-item" target="_blank" href="redes-neuronales.html">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="Assets/digits.jpg">
+          <figcaption class="project-text">
+            <h2>Computer Vision</h2>
+            <p>Predicción de números</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
+
+           <p class='hidden popUpdesc'> En este proyecto se lleva a cabo la creación de redes neuronales para la predicción de 
+            digitos. Para ello se crean modelos a partir de capas y Transfer Learning, además, de la creación de un ensemble de los
+            diferentes modelos.
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries. -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+      <!-- Project Three -->
+      <a class="project-item" target="_blank" href="GridSearchCV.html">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="Assets/gridsearch.png">
+          <figcaption class="project-text">
+            <h2>GridSearchCV</h2>
+            <p>Selección de modelos e hiperparámetros</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview -->
+
+           <p class='hidden popUpdesc'> En este proyecto se lleva a cabo una búsqueda en malla (GridSearch) para 
+            seleccionar cuáles son los mejores modelos y cuáles son los mejores hiperparámetros. Además, se añade al 
+            final un pequeño análisis de una libreta de Kaggle.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span> 
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+      <!-- Project One -->
+      <a class="project-item"  target="_blank" href="Decission Tree.html">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="Assets/prueba3.png">
+          <figcaption class="project-text">
+            <h2>Árboles de Decisión</h2>
+            <p>EDA, preprocesamiento de datos e implementación de Árboles de Decisión</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
+
+           <p class='hidden popUpdesc'> En este proyecto se lleva a cabo un análisis exploratorio de datos sobre el conjunto 
+            de datos WeatherAUS, posteriormente se realiza un preprocesamiento y por último se implementa un árbol de decisión.
+            </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/DomingoJoseCab"></span>
+        <span id="livePreview" href="Análisis exploratorio de datos.html"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project One Ends -->
+			<!-- Project Two -->
+      <a class="project-item" target="_blank" href="Análisis exploratorio de datos.html">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="Assets/titanic.jpg">
+          <figcaption class="project-text">
+            <h2>EDA del Titanic</h2>
+            <p>EDA, preprocesamiento de datos y validación de modelos</p>
+            <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
+
+           <p class='hidden popUpdesc'> En este proyecto se lleva a cabo un anális exploratorio de datos de la base de Datos
+            Titanic. Además, se realiza un preprocesamiento a través de la creación de pipeline. Por último, un validación de modelos.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+      </figcaption>
+      </figure>
+			</a>
+			<!-- Project Two Ends -->
+			
+
+			
+			<!-- Project Three Ends -->
+			
+			
+			<!-- Project Four Ends -->
+			
+			<!-- Project Five -->
+      <a class="project-item" target="_blank" href="https://www.kaggle.com/code/domingao/proyecto-varp">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="Assets/varp.png">
+          <figcaption class="project-text">
+            <h2>Clasificación de animales</h2>
+            <p>Muestra desbalanceada</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS  -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview   -->
+
+           <p class='hidden popUpdesc'> En este proyecto se lleva a cabo la clasificación de imágenes entre 10 clases de animales. Dicho conjunto de datos se encuentra desbalanceado,
+            por lo tanto, se lleva a cabo un Data Augmentation y se obliga a generalizar mejor a nuestra red neuronal. Además, de utilizar otras métricas de evaluación para evaluar 
+            correctamente el desarrollo del modelo.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project Five Ends -->
+			
+			<!-- Project Six 
+      <a class="project-item" target="_blank">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1526049997133-25caee4c5796?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a785d2392ba5c7683a2b09ee1b40b20&auto=format&fit=crop&w=1048&q=80">
+          <figcaption class="project-text">
+            <h2>Project Six</h2>
+            <p>Awesome Development</p>
+          <!-- **********************
+            <!-- START OF HIDDEN ELEMENTS 
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview 
+
+           <p class='hidden popUpdesc'> PROJECT SIX Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+
+      <!-- *********************** 
+      <!-- END OF HIDDEN ELEMENTS
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project Six Ends -->
+			
+    </div>
+	</section>
+	<!-- Portfolio section ends -->
+  
+	
+	<!-- Contact button section begins -->
+  <section class="content contact">
+    <a class="button-slide" data-hover="domingojcn@email.com" href="mailto:domingojcn@gmail.com">
+      <span>Talk To Me 👌</span>
+    </a> 
+    <a class="button-slide" data-hover="Lets see it!" href="https://www.linkedin.com/in/domingo-jos%C3%A9-caballero-navarro-56a29a24b/">
+      <span>Linkedin 👀</span>
+    </a> 
+    <a class="button-slide" data-hover="/DomingoJoseCab" href="https://github.com/DomingoJoseCab">
+      <span>GitHub 🎯</span>
+    </a> 
+    <!--div id='form'>
+      <h1>Drop a message below.</h1>
+      <p>And I'll get to you ASAP</p>
+      <form> 
+        <input type="text" placeholder="Your Awesome Name"> 
+        <input type="email" placeholder="Your cool email address">
+        <textArea placeholder="Message here please">
+        </textArea>
+        <div id='buttonDiv'>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>-->
+    </section>
+	<!-- Contact button section ends-->
+	
+  <!-- SECCIÓN PARA RELLENAR CON CARACTERÍSTICAS SOBRE MÍ -->
+  <section class="about-me">
+    <h1>About me</h1>
+
+  </section>
+  <!-- FINAL SECCIÓN ABOUT -->
+
+	<!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/domingo-jos%C3%A9-caballero-navarro-56a29a24b/" target="_blank">Linkedin</a>
+				</li>
+				<li>
+						<a href="https://github.com/DomingoJoseCab" target="_blank">GitHub</a>
+					</li>
+      </ul>
+    </div>
+	</footer>
+	<!-- Footer section ends -->
+  </main>
+  <!--This section would ONLY appear when an individual project 'box' is clicked, It gives more detail about the project. it contains-- IMAGE OF THE PROJECT, THE PROJECT'S NAME, THE PROJECT FULL DESCRIPTION, GITHUB LINK && PREVIEW LINK -->
+  <div class="popUp">
+    <div class="popUpImg"></div>
+    <div id="popUpText">
+      <h1>Fuzzy Ruled-Based System</h1>
+      <p class="projectDesc">In this project, a exploratory data analysis, preprocessing data, fuzzy 
+        implementation and Wang & Mendel Algortihm will be carried out. This project can be download from 
+        my GitHub.</p>
+      <div>
+        <a href="https://github.com/DomingoJoseCab" id="githubLink"></a>
+        <a href="Fuzzy Ruled-Based System.html" id="previewLink"></a>
+      </div>
+
+    </div>
+    <span id="cancelBtn">X</span>
+  </div>
+</body>
+
+
+</html>
