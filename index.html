@@ -1,9 +1,197 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Proyectos</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Portfolio</title>
+	<meta content="Development portfolio of .... " name="description" property="og:description">
+	
+	<!-- Link to the relevant stylesheet -->
+	<link href="style.css" rel="stylesheet">
+	
+  <!--[if lte IE 8]>
+      <link href="dist/css/blockIE.css" rel="stylesheet">
+    <![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
+  <!-- The JS code block has been moved into the index.js file.  -->
+  <script src="./index.js"></script>
 </head>
-  <body>
-    Aquí habrán proyectos
-  </body>
+
+<body>
+	<!-- This calls the little script written above. -->
+  <div class="preloader"></div>
+  <main>
+
+	<!-- The Intro section begins -->
+  <section class="intro">
+
+		<div class="intro-text"> <!-- Seperates the text section from the arrow. -->
+      <div class="Hi">
+				<h1>Hi! 👋  &mdash; My name is <span>Domingo</span>, I'm a <span>Data Scientist</span> 👨🏻‍💻.</h1> <!-- Insert your text here! -->
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/carlos-de-manuel-508169258/"
+          target="_blank"
+          class="linkedin"
+          ><img
+          src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg"
+          alt="Linkedin"
+          height="10"
+          width="15"
+        /></a>
+        <a href="https://github.com/carlosdmv7" target="_blank" class="github"
+          ><img
+          src="https://www.vectorlogo.zone/logos/github/github-tile.svg"
+          alt="GitHub"
+          height="10"
+          width="15"
+        /></a>
+
+        <a href="mailto:carlosdmv7@gmail.com" target="_blank" class="google"
+          ><img
+          src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg"
+          alt="Gmail"
+          height="15"
+          width="15"
+        /></a>
+      </div>
+    </div>
+    
+	</section>
+	<!-- Intro section ends -->
+
+	<!-- The portfolio section begins -->
+  <section class="projects">
+    <div class="projects-collage">
+
+      <!-- Project Four -->
+      <a class="project-item" target="_blank" href="redes-neuronales.html">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="Assets/digits.jpg">
+          <figcaption class="project-text">
+            <h2>Computer Vision</h2>
+            <p>Predicción de números</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
+
+           <p class='hidden popUpdesc'> Aquí habría que explicar un poco
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries. -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+      <!-- Project One -->
+      <a class="project-item"  target="_blank" href="">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="">
+          <figcaption class="project-text">
+            <h2>Aquí habría un título</h2>
+            <p>Aquí podría explicar</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
+
+           <p class='hidden popUpdesc'> En este proyecto se lleva a cabo un análisis exploratorio de datos sobre el conjunto 
+            de datos WeatherAUS, posteriormente se realiza un preprocesamiento y por último se implementa un árbol de decisión.
+            </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/DomingoJoseCab"></span>
+        <span id="livePreview" href="Análisis exploratorio de datos.html"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project One Ends -->
+			
+    </div>
+	</section>
+	<!-- Portfolio section ends -->
+  
+	
+	<!-- Contact button section begins -->
+  <section class="content contact">
+    <a class="button-slide" data-hover="carlosdmv7@email.com" href="mailto:carlosdmv7@gmail.com">
+      <span>Contact</span>
+    </a> 
+    <a class="button-slide" data-hover="Lets see it!" href="https://www.linkedin.com/in/carlos-de-manuel-508169258/">
+      <span>Linkedin</span>
+    </a> 
+    <a class="button-slide" data-hover="/Carlosdmv7" href="https://github.com/carlosdmv7">
+      <span>GitHub</span>
+    </a> 
+    <!--div id='form'>
+      <h1>Drop a message below.</h1>
+      <p>And I'll get to you ASAP</p>
+      <form> 
+        <input type="text" placeholder="Your Awesome Name"> 
+        <input type="email" placeholder="Your cool email address">
+        <textArea placeholder="Message here please">
+        </textArea>
+        <div id='buttonDiv'>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>-->
+    </section>
+	<!-- Contact button section ends-->
+	
+  <!-- SECCIÓN PARA RELLENAR CON CARACTERÍSTICAS SOBRE MÍ -->
+  <section class="about-me">
+    <h1>About me</h1>
+
+  </section>
+  <!-- FINAL SECCIÓN ABOUT -->
+
+	<!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/carlos-de-manuel-508169258/" target="_blank">Linkedin</a>
+				</li>
+				<li>
+						<a href="https://github.com/carlosdmv7" target="_blank">GitHub</a>
+					</li>
+      </ul>
+    </div>
+	</footer>
+	<!-- Footer section ends -->
+  </main>
+  <!--This section would ONLY appear when an individual project 'box' is clicked, It gives more detail about the project. it contains-- IMAGE OF THE PROJECT, THE PROJECT'S NAME, THE PROJECT FULL DESCRIPTION, GITHUB LINK && PREVIEW LINK -->
+  <div class="popUp">
+    <div class="popUpImg"></div>
+    <div id="popUpText">
+      <h1>Fuzzy Ruled-Based System</h1>
+      <p class="projectDesc">In this project,msq/p>
+      <div>
+        <a href="https://github.com/carlosdmv7" id="githubLink"></a>
+        <a href="" id="previewLink"></a>
+      </div>
+
+    </div>
+    <span id="cancelBtn">X</span>
+  </div>
+</body>
+
+
 </html>
